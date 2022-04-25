@@ -10,14 +10,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
         statusBarIconBrightness: Brightness.light,
         statusBarColor: Colors.transparent,
-        systemNavigationBarColor: Colors.black,
+        systemNavigationBarColor: whiteColor,
         systemNavigationBarIconBrightness: Brightness.light,
       ),
     );
@@ -36,6 +35,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: const AppPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
